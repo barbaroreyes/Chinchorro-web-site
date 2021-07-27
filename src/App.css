@@ -70,17 +70,17 @@
   
   }.product{
     width: 44%;
-    padding:40px;
+    padding:10px;
+    text-align: center;
+    font-size:27;
   }.image-product{
-    width: 100%;
-   display: flex;
-   justify-content: center;
+   width: 88%;
+  
   }.navigation{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items:center;
-    width: 100%;
   } 
   /* 
    

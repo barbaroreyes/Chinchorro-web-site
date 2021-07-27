@@ -5,7 +5,7 @@ const Product = ({name, description,image}) => {
     <div className='product'>
     <Link className='nav' to='/cart'>
       <h1>{name}</h1>
-      <h1>{description}</h1>
+      <p>{description}</p>
       <img  className ='image-product'src={image} alt="#"/>
     </Link>
     </div>

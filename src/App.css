@@ -61,3 +61,28 @@
   justify-content: center;
   }
 }
+
+@media (min-width: 1024px) {
+  .main{
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+  
+  }.product{
+    width: 44%;
+    padding:40px;
+  }.image-product{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+  }.navigation{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+  } 
+  /* 
+   
+  }*/
+}

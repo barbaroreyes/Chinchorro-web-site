@@ -15,8 +15,8 @@ function App() {
         <Route exact path="/">
          <Login/>
          </Route>
-       <Route exact path="/products">
-         
+       <Route exact path="/main">
+         <Main/>
        </Route>
 
 </Switch>

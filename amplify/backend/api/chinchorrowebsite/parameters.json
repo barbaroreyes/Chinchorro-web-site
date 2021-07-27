@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "chinchorrowebsite",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authchinchorrowebsitec595d5a3",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

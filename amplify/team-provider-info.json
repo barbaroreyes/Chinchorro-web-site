@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-chinchorrowebsite-dev-165832-authRole",
+      "UnauthRoleArn": "arn:aws:iam::744190267895:role/amplify-chinchorrowebsite-dev-165832-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::744190267895:role/amplify-chinchorrowebsite-dev-165832-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-chinchorrowebsite-dev-165832-deployment",
+      "UnauthRoleName": "amplify-chinchorrowebsite-dev-165832-unauthRole",
+      "StackName": "amplify-chinchorrowebsite-dev-165832",
+      "StackId": "arn:aws:cloudformation:us-east-1:744190267895:stack/amplify-chinchorrowebsite-dev-165832/a04c50d0-ee5c-11eb-b1d7-0a374cd00e27",
+      "AmplifyAppId": "dyfh18tic77at"
+    },
+    "categories": {
+      "auth": {
+        "chinchorrowebsitec595d5a3": {}
+      },
+      "function": {
+        "createOrder": {
+          "deploymentBucketName": "amplify-chinchorrowebsite-dev-165832-deployment",
+          "s3Key": "amplify-builds/createOrder-6c654a597954346f3358-build.zip"
+        },
+        "processPayment": {
+          "deploymentBucketName": "amplify-chinchorrowebsite-dev-165832-deployment",
+          "s3Key": "amplify-builds/processPayment-4e50777a663834746576-build.zip"
+        }
+      }
+    }
+  }
+}

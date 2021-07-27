@@ -15,8 +15,9 @@ const Main = () => {
       try {
           const espeData = await API.graphql(graphqlOperation(listPlates))
           const listespecial = espeData.data.listPlates.items
-          console.log(listespecial)
-          setPlates(listespecial)
+          const  filterP = listespecial.filter(plate => plate.category === 'especial')
+            setPlates(filterP)
+      
       } catch (error) {
           console.log('error make fetch',error)
       }

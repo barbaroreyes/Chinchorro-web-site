@@ -2,7 +2,7 @@ import React from 'react'
 import Home from './pages/Home'
 import Login from './components/login'
 import Main from './components/main'
-import Nav from './components/Nav'
+import Products from './pages/Products'
 import {Switch,Route} from 'react-router-dom'
 
 import './App.css';
@@ -17,6 +17,9 @@ function App() {
          </Route>
        <Route exact path="/main">
          <Main/>
+       </Route>
+       <Route exact path="/products">
+         <Products/>
        </Route>
 
 </Switch>

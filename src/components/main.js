@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react'
 import {API,graphqlOperation} from 'aws-amplify'
+import Categories from './Categories'
 import {listPlates} from  '../graphql/queries'
 import Product from './Product'
 
@@ -25,6 +26,7 @@ const Main = () => {
   return (
 
     <div className='main'>
+         <Categories/>
        <h1 className='speciales'>Especiales</h1>
         {plates.map((item,i)=>{
           return(

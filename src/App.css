@@ -50,5 +50,14 @@
     width: 100%;
     color: orange;
     font-size:111px;
+  }.categories{
+    color: azure;
+    margin :20px;
+  padding: 20px;
+    font-size:60px;
+  }.navigation{
+    width:100%;
+    display: flex;
+  justify-content: center;
   }
 }

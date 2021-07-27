@@ -2,8 +2,12 @@ import React from 'react'
 import  {Link} from 'react-router-dom'
 const Nav = () => {
   return (
-    <nav>
-      <Link className ='nav categories' to= '/'>Home</Link>
+    <nav className='navigation'>
+        <Link className ='nav categories' to= '/'>Menu Regular</Link>
+      <Link className ='nav categories' to= '/'>Especiales</Link>
+      <Link className ='nav categories' to= '/'>Menu Regular</Link>
+      <Link className ='nav categories' to= '/'>Especiales</Link>
+    
    
     </nav>
   )

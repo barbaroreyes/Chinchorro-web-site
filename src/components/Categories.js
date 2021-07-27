@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Product from './Product'
 const Categories = () => {
   return (
-    <div>
-      Categories
+    <div className="product">
+     <Product/>
     </div>
   )
 }

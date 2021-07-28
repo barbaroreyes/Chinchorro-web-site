@@ -3,8 +3,12 @@ import {Link} from 'react-router-dom'
 import {API,graphqlOperation} from 'aws-amplify'
 import {listPlates} from '../graphql/queries'
 import  Product from '../components/Product'
-const Products = () => {
-const [principales,setprincipales] = useState([])
+
+
+const Products = ({cart,setCart}) => {
+
+  const [principales,setprincipales] = useState([])
+
   useEffect(async()=>{
     try {
       const principalData = await API.graphql(graphqlOperation(listPlates))
@@ -16,6 +20,14 @@ const [principales,setprincipales] = useState([])
       
     }
   },[])
+
+  const addToCart =(id)=>{
+    const byId = principales.filter(product => product.id === id)
+    console.log('byId',)
+    setCart([...cart,byId])
+  }
+
+
   return (
     <div className='main'>
       <Link className ='nav' to='/'>Home</Link>
@@ -26,6 +38,8 @@ const [principales,setprincipales] = useState([])
          name={item.name}
          description={item.description}
           image={item.image}
+          price={item.price}
+          onClick={()=>addToCart(item.id)}
          />
        )
       })}

@@ -27,7 +27,6 @@ const Main = () => {
   return (
 
     <div className='main'>
-         {/* <Categories/> */}
        <h1 className='speciales'>Especiales</h1>
         {plates.map((item,i)=>{
           return(

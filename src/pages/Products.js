@@ -5,7 +5,7 @@ import {listPlates} from '../graphql/queries'
 import  Product from '../components/Product'
 
 
-const Products = ({cart,setCart}) => {
+const Products = ({addToCart}) => {
 
   const [principales,setprincipales] = useState([])
 
@@ -21,12 +21,7 @@ const Products = ({cart,setCart}) => {
     }
   },[])
 
-  const addToCart =(id)=>{
-    const byId = principales.filter(product => product.id === id)
-    console.log('byId',)
-    setCart([...cart,byId])
-  }
-
+console.log('principales on products',principales)
 
   return (
     <div className='main'>
@@ -35,11 +30,9 @@ const Products = ({cart,setCart}) => {
        return (
          <Product 
          key={i}
-         name={item.name}
-         description={item.description}
-          image={item.image}
-          price={item.price}
-          onClick={()=>addToCart(item.id)}
+         {...item}
+         addToCart={addToCart}
+          
          />
        )
       })}

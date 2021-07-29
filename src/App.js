@@ -10,9 +10,11 @@ import './App.css';
 
 function App() {
   const [cart,setCart]= useState([])
-  const [products,setProduct]= useState([])
 
-   
+   const addToCart = (id)=>{
+     
+     setCart([...cart,id])
+   }
 
   
 
@@ -21,21 +23,25 @@ function App() {
          <Home/>
       <Switch>
         <Route exact path="/">
-         <Login/>
+         <Login 
+          addToCart={addToCart}
+         />
          </Route>
-       <Route exact path="/main">
-         <Main/>
+       <Route exact path="/">
+         <Main 
+        
+         />
        </Route>
        <Route exact path="/products">
          <Products 
-         cart={cart}
-         setCart={setCart}
+            addToCart={addToCart}
          />
        </Route>
        <Route exact path="/cart">
          <Cart
           cart={cart}
-          setCart={setCart}
+          addToCart={addToCart}
+        
          />
        </Route>
 

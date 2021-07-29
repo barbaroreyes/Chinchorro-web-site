@@ -22,6 +22,9 @@
 .product{
   border-radius: 10px 20px;
 }
+.total{
+  color: orange;
+}
 
 @media (min-width: 786px) {
   .header1{
@@ -95,5 +98,12 @@
     width: 100%;
     color: orange;
     font-size:111px;
+  }.carrito-vacio{
+    color: orange;
+  }.total{
+    color: orange;
+  }.div-cart{
+    border-top: 1px solid white;
+    display: flex;
   }
 }
